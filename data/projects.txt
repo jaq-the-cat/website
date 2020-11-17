@@ -1,6 +1,6 @@
-Website=website
 Asteroids=asteroids
-Learning SFML=sfml-learn
 Learning OpenGL=opengl-learn
+Learning SFML=sfml-learn
 Rocket Thingy=rocket-thingy
 Dotfiles=dotfiles
+Website=website
