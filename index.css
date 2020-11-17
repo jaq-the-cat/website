@@ -6,6 +6,7 @@
     font-weight: normal;
     list-style-type: none;
     text-decoration: none;
+    text-align: center;
 }
 
 html {
@@ -64,4 +65,23 @@ main .project {
 
 main .project h2 {
     color: #000;
+}
+
+@media (max-width: 610px) {
+    header {
+        padding: 60px 0;
+        row-gap: 15px;
+    }
+    header ul {
+        flex-direction: column;
+        row-gap: 12px;
+        column-gap: 0;
+    }
+    main .project {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    main .project small {
+        display: none;
+    }
 }
