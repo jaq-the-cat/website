@@ -12,3 +12,6 @@ do
     echo "<small>$LINK</small>" >> q.html
     echo "</a>" >> q.html
 done <projects.txt
+echo "</main>" >> q.html
+echo "</body>" >> q.html
+echo "</html>" >> q.html
