@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+a small {
+    color: #252525;
+    text-decoration: underline;
+}
+
 html {
     min-height: 100vh;
 }
@@ -69,7 +74,7 @@ main .project h2 {
 
 @media (max-width: 610px) {
     header {
-        padding: 60px 15px;
+        padding: 60px 25px;
         row-gap: 15px;
     }
     header ul {
