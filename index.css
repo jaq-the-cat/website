@@ -69,7 +69,7 @@ main .project h2 {
 
 @media (max-width: 610px) {
     header {
-        padding: 60px 0;
+        padding: 60px 15px;
         row-gap: 15px;
     }
     header ul {
