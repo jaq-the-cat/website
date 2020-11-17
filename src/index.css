@@ -73,6 +73,13 @@ main .project {
     border: 2px solid #000;
     border-radius: 15px;
     box-shadow: 4px 4px 4px 2px #0005;
+    transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+main .project:hover {
+    opacity: 0.5;
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 0 #0005;
 }
 
 main .project h2 {
