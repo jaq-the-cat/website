@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #fff;
     font-family: "TeX Gyre Adventor";
     font-weight: normal;
+    list-style-type: none;
 }
 
 html {
@@ -28,13 +28,24 @@ header {
     background-color: #000;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
+header * {
+    color: #fff;
 }
 
 main {
     padding: 30px 0;
     background-color: #fff;
     height: 65vh;
+}
+
+main #contact {
+    margin-bottom: auto;
+}
+
+main #contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
 }
