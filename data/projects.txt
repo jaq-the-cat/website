@@ -1,5 +1,5 @@
 Website=website
 Asteroids=asteroids
-SFML Learn=sfml-learn
-OpenGL Learn=opengl-learn
+Learning SFML=sfml-learn
+Learning OpenGL=opengl-learn
 Rocket Thingy=rocket-thingy
