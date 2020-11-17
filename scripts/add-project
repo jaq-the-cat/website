@@ -8,6 +8,6 @@ FORMATTED="<a class=\"project\" href=\"$LINK\">\n\
             <small>$LINK<\/small>\n\
         <\/a>\n\
         <!--ENDMARKER-->"
-sed -i "s/<!--ENDMARKER-->/$FORMATTED/" index.html
+sed -i "s/<!--ENDMARKER-->/$FORMATTED/" src/index.html
 echo "$TITLE : $REPO" >> projects
 echo "Added project \"$TITLE\" ($LINK) to website"

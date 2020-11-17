@@ -1,0 +1,17 @@
+#!/bin/bash
+cp src/template.html src/index.html
+while read l
+do
+    THINGS=`echo "$l" | grep -o -E "[a-Z\-]+"`
+    echo "$THINGS"
+    TITLE=`echo "$THINGS" | head -n -1`
+    REPO=`echo "$THINGS" | tail -n 1`
+    LINK="https://github.com/jaq-the-cat/$REPO"
+    echo "<a class=\"project\" href=\"$LINK\">" >> src/index.html
+    echo "<h2>$TITLE</h2>" >> src/index.html
+    echo "<small>$LINK</small>" >> src/index.html
+    echo "</a>" >> src/index.html
+done <projects.txt
+echo "</main>" >> src/index.html
+echo "</body>" >> src/index.html
+echo "</html>" >> src/index.html
