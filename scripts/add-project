@@ -1,0 +1,13 @@
+#!/bin/bash
+REPO=$1
+LINK="https:\/\/github.com\/jaq-the-cat\/$REPO"
+TITLE=$2
+
+FORMATTED="<a class=\"project\" href=\"$LINK\">\n\
+            <h2>$TITLE<\/h2>\n\
+            <small>$LINK<\/small>\n\
+        <\/a>\n\
+        <!--ENDMARKER-->"
+sed -i "s/<!--ENDMARKER-->/$FORMATTED/" src/index.html
+echo "$TITLE : $REPO" >> projects
+echo "Added project \"$TITLE\" ($LINK) to website"
