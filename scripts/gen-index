@@ -11,7 +11,7 @@ do
     echo "<h2>$TITLE</h2>" >> src/index.html
     echo "<small>$LINK</small>" >> src/index.html
     echo "</a>" >> src/index.html
-done <projects.txt
+done <data/projects.txt
 echo "</main>" >> src/index.html
 echo "</body>" >> src/index.html
 echo "</html>" >> src/index.html
