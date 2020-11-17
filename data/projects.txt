@@ -3,3 +3,4 @@ Asteroids=asteroids
 Learning SFML=sfml-learn
 Learning OpenGL=opengl-learn
 Rocket Thingy=rocket-thingy
+Dotfiles=dotfiles

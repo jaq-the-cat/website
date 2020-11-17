@@ -48,6 +48,13 @@ header ul {
     font-size: 1.35rem;
 }
 
+header img {
+    max-width: 1.25rem;
+    max-height: 1.25rem;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
 main {
     padding: 30px 0;
     background-color: #fff;
