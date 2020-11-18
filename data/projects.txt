@@ -1,6 +1,7 @@
 Asteroids=asteroids
+Text Editor Thingy=text-editor-thingy
+Website=website
 Learning OpenGL=opengl-learn
 Learning SFML=sfml-learn
 Rocket Thingy=rocket-thingy
 Dotfiles=dotfiles
-Website=website
