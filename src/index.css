@@ -59,7 +59,17 @@ main {
     padding: 25px;
     background-color: #fff;
     height: 100%;
-    row-gap: 65px;
+}
+
+main > section > h1 {
+    margin-bottom: 5px;
+}
+
+main .separator {
+    margin: 50px 0;
+    height: 1px;
+    width: 75%;
+    background-color: #000;
 }
 
 main #whoami {
@@ -68,10 +78,6 @@ main #whoami {
     align-items: center;
     row-gap: 15px;
     margin-top: 30px;
-}
-
-main > section > h1 {
-    margin-bottom: 5px;
 }
 
 main #mystuff {
@@ -103,6 +109,15 @@ main .project:hover {
 
 main .project h2 {
     color: #000;
+}
+
+@media (max-width: 700px) {
+    main .separator {
+        margin: 50px 0;
+        height: 1px;
+        width: 75%;
+        background-color: #000;
+    }
 }
 
 @media (max-width: 650px) {
