@@ -59,7 +59,26 @@ main {
     padding: 25px;
     background-color: #fff;
     height: 100%;
-    row-gap: 30px;
+    row-gap: 65px;
+}
+
+main #whoami {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    margin-top: 30px;
+}
+
+main > section > h1 {
+    margin-bottom: 5px;
+}
+
+main #mystuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
 }
 
 main .project {

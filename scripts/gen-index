@@ -12,6 +12,7 @@ do
     echo "<small>$LINK</small>" >> src/index.html
     echo "</a>" >> src/index.html
 done <data/projects.txt
+echo "</section>" >> src/index.html
 echo "</main>" >> src/index.html
 echo "</body>" >> src/index.html
 echo "</html>" >> src/index.html
