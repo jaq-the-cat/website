@@ -19,7 +19,6 @@ def index():
 def post():
     post_form = PostForm()
     if post_form.validate_on_submit():
-        print(post_form)
         Post.add(post_form.title.data, post_form.body.data)
     return redirect(url_for('index.index'))
 

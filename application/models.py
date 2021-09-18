@@ -10,7 +10,7 @@ class Post(db.Model):
     body = db.Column(db.String(1000))
 
     def __init__(self, title: str, body: str):
-        self.uid = uuid4()
+        self.uid = str(uuid4())
         self.title = title
         self.body = body
 
@@ -19,5 +19,5 @@ class Post(db.Model):
 
     @staticmethod
     def add(title: str, body: str):
-        db.session.add(Post(uid, title, body))
+        db.session.add(Post(title, body))
         db.session.commit()
