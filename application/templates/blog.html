@@ -1,5 +1,9 @@
 {% extends 'index.html' %}
 
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+{% endblock css %}
+
 {% block body %}
 <form class="post flex-mid" action="{{ url_for('index.post') }}" method="post">
   {{ pf.csrf_token }}
@@ -9,10 +13,12 @@
   {{ pf.body }}<br>
   <button type="submit">Create Post</button>
 </form>
-{% for post in posts %}
-<article>
-  <h3>{{ post.title }}</h3>
-  <p>{{ post.body }}</p>
-</article>
-{% endfor %}
+<main>
+  {% for post in posts %}
+  <article>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+  </article>
+  {% endfor %}
+</main>
 {% endblock body %}
