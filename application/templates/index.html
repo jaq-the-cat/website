@@ -13,7 +13,7 @@
   <header class="flex-mid">
     <h2>Jaqi's Website</h2>
     {% if current_user.is_authenticated %}
-      <small>Logged in</small>
+      <a href="{{ url_for('auth.signout') }}"></a>
     {% else %}
       {{ w.pass('password', lf) }}
     {% endif %}

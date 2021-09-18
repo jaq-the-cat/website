@@ -17,6 +17,7 @@
     'Open Sans', Arial, Helvetica, sans-serif;
   color: var(--white);
   background-color: var(--black);
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,12 +41,29 @@ header h2 {
   font-size: 1.8rem;
 }
 
-header small {
+header a {
   padding: 5px 10px;
   background-color: var(--orange);
+  border: 2px solid var(--orange);
   color: var(--black);
   border-radius: 15px;
   font-size: 0.75rem;
+  transition: 150ms;
+}
+
+header a:after {
+  content: 'Signed in';
+  transition: 150ms;
+}
+
+header a:hover {
+  background-color: transparent;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+header a:hover:after {
+  content: 'Sign out';
 }
 
 .line {
@@ -65,8 +83,18 @@ button {
   padding: 5px 10px;
   background-color: var(--orange);
   border: 1px solid var(--orange);
+  border-left: none;
   color: var(--black);
   border-radius: 0 15px 15px 0;
+  transition: 150ms;
+}
+
+button:hover{
+  padding: 5px 10px;
+  background-color: transparent;
+  color: var(--orange);
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
