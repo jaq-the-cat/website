@@ -1,0 +1,25 @@
+{% import 'widgets.html' as w %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document | {{ title }} </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  {% block css %}{% endblock css %}
+</head>
+<body class="flex-mid">
+  <header class="flex-mid">
+    <h2>Jaqi's Website</h2>
+    {% if current_user.is_authenticated %}
+      <small>Logged in</small>
+    {% else %}
+      {{ w.pass('password', lf) }}
+    {% endif %}
+  </header>
+  <div class="line"></div>
+  {% block body %}{% endblock body %}
+</body>
+{% block js %}{% endblock js %}
+</html>

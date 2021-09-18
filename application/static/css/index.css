@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200&display=swap');
+
+:root {
+  font-size: 14pt;
+  --black: #1d1d1d;
+  --gray: #313131;
+  --white: #fdfdfd;
+  --orange: #e5a142;
+  --borange: #fcdeb5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    'Open Sans', Arial, Helvetica, sans-serif;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:
+    'Titillium Web', Arial, Helvetica, sans-serif;
+}
+
+.flex-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 1.5rem 0;
+  row-gap: 5px;
+  width: 100%;
+}
+
+header h2 {
+  font-size: 1.8rem;
+}
+
+header small {
+  padding: 5px 10px;
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 15px;
+  font-size: 0.75rem;
+}
+
+.line {
+  width: 400px;
+  text-align: center;
+  background-color: var(--gray);
+  height: 1px;
+}
+
+input {
+  border: 1px solid var(--orange);
+  padding: 5px 10px;
+  border-radius: 15px 0 0 15px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  color: var(--black);
+  border-radius: 0 15px 15px 0;
+}
+
+@media (max-width: 500px) {
+  .line {
+    width: 230px;
+  }
+}

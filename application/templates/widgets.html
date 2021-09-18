@@ -1,0 +1,6 @@
+{% macro pass(name, lf) %}
+  <form class="password" method="post" action="{{ url_for('auth.signin') }}">
+    {{ lf.csrf_token }}
+    {{ lf.password }}<button type="submit">Sign in</button>
+  </form>
+{% endmacro %}
