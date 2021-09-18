@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, Blueprint
+from flask import redirect, url_for, Blueprint
 from flask_login import login_user
 from flask_login.utils import logout_user
 from application.jaqi import Jaqi

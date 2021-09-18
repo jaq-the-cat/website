@@ -1,4 +1,10 @@
 {% extends 'index.html' %}
 
 {% block body %}
+{% for post in posts %}
+<article>
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+</article>
+{% endfor %}
 {% endblock body %}
