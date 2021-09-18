@@ -44,7 +44,7 @@ header h2 {
 header a {
   padding: 5px 10px;
   background-color: var(--orange);
-  border: 2px solid var(--orange);
+  border: 1.3px solid var(--orange);
   color: var(--black);
   border-radius: 15px;
   font-size: 0.75rem;
@@ -74,7 +74,7 @@ header a:hover:after {
 }
 
 input {
-  border: 1px solid var(--orange);
+  border: 1.3px solid var(--orange);
   padding: 5px 10px;
   border-radius: 15px 0 0 15px;
 }
@@ -82,7 +82,7 @@ input {
 button {
   padding: 5px 10px;
   background-color: var(--orange);
-  border: 1px solid var(--orange);
+  border: 1.3px solid var(--orange);
   border-left: none;
   color: var(--black);
   border-radius: 0 15px 15px 0;
