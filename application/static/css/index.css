@@ -77,30 +77,53 @@ header a:hover:after {
   text-align: center;
   background-color: var(--gray);
   height: 1px;
+  margin-bottom: 30px;
 }
 
 input {
   border: 1.3px solid var(--orange);
   padding: 5px 10px;
+  border-radius: 15px;
+}
+
+header input {
   border-radius: 15px 0 0 15px;
+  border-radius: 15px;
 }
 
 button {
   padding: 5px 10px;
   background-color: var(--orange);
   border: 1.3px solid var(--orange);
-  border-left: none;
   color: var(--black);
-  border-radius: 0 15px 15px 0;
   transition: 150ms;
+  border-radius: 15px;
 }
 
-button:hover{
+header button {
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+}
+
+button:hover {
   padding: 5px 10px;
   background-color: transparent;
   color: var(--orange);
-  border-radius: 0 15px 15px 0;
   cursor: pointer;
+}
+
+form.post label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--bgray);
+}
+
+form.post input {
+  margin-bottom: 10px;
+}
+
+form.post input:last-of-type {
+  margin-bottom: 15px;
 }
 
 @media (max-width: 500px) {

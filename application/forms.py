@@ -8,6 +8,6 @@ class LoginForm(FlaskForm):
     password = PasswordField(validators=[DataRequired()])
 
 class PostForm(FlaskForm):
-    title = TextField('title', validators=[DataRequired(), Length(max=120)])
-    body = TextField('body', validators=[DataRequired(), Length(max=1000)])
-    image = FileField('image', validators=[FileRequired(), FileAllowed(['jpg', 'jpeg', 'png', 'webp', 'bmp'], 'Images only')])
+    title = TextField('Title', validators=[DataRequired(), Length(max=120)])
+    body = TextField('Body', validators=[DataRequired(), Length(max=1000)])
+    # image = FileField('image', validators=[FileRequired(), FileAllowed(['jpg', 'jpeg', 'png', 'webp', 'bmp'], 'Images only')])

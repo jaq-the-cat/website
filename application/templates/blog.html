@@ -1,6 +1,14 @@
 {% extends 'index.html' %}
 
 {% block body %}
+<form class="post flex-mid" action="{{ url_for('index.post') }}" method="post">
+  {{ pf.csrf_token }}
+  <small>{{ pf.title.label }}</small>
+  {{ pf.title }}<br>
+  <small>{{ pf.body.label }}</small>
+  {{ pf.body }}<br>
+  <button type="submit">Create Post</button>
+</form>
 {% for post in posts %}
 <article>
   <h3>{{ post.title }}</h3>
