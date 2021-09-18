@@ -4,6 +4,7 @@
   font-size: 14pt;
   --black: #1d1d1d;
   --gray: #313131;
+  --bgray: #909090;
   --white: #fdfdfd;
   --orange: #e5a142;
   --borange: #fcdeb5;
@@ -33,12 +34,17 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   padding: 1.5rem 0;
-  row-gap: 5px;
   width: 100%;
 }
 
 header h2 {
   font-size: 1.8rem;
+  margin: 0;
+}
+
+header h4 {
+  color: var(--bgray);
+  margin-bottom: 20px;
 }
 
 header a {
