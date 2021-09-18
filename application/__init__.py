@@ -36,5 +36,5 @@ def inject_login_form():
     return dict(lf=LoginForm())
 
 # Register views
-import application.views.index
+import application.views.blog
 import application.views.auth
