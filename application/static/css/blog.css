@@ -25,3 +25,9 @@ article small {
   color: var(--kbgray);
   margin-bottom: 6px;
 }
+
+article p {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  text-align: justify;
+}
