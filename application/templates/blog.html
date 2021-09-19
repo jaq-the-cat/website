@@ -4,19 +4,25 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
 {% endblock css %}
 
+{% block header %}
+  {% if current_user.is_authenticated %}
+    <form class="post flex-mid" action="{{ url_for('index.post') }}" method="post">
+      {{ pf.csrf_token }}
+      <small>{{ pf.title.label }}</small>
+      {{ pf.title }}<br>
+      <small>{{ pf.body.label }}</small>
+      {{ pf.body }}<br>
+      <button type="submit">Create Post</button>
+    </form>
+  {% endif %}
+{% endblock header %}
+
 {% block body %}
-<form class="post flex-mid" action="{{ url_for('index.post') }}" method="post">
-  {{ pf.csrf_token }}
-  <small>{{ pf.title.label }}</small>
-  {{ pf.title }}<br>
-  <small>{{ pf.body.label }}</small>
-  {{ pf.body }}<br>
-  <button type="submit">Create Post</button>
-</form>
 <main>
   {% for post in posts %}
   <article>
     <h3>{{ post.title }}</h3>
+    <small>{{ post.post_time.strftime("%d/%m/%Y %H:%M") }}</small>
     <p>{{ post.body }}</p>
   </article>
   {% endfor %}

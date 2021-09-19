@@ -4,6 +4,7 @@
   font-size: 14pt;
   --black: #1d1d1d;
   --gray: #313131;
+  --kbgray: #454545;
   --bgray: #909090;
   --white: #fdfdfd;
   --orange: #e5a142;
@@ -24,6 +25,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family:
     'Titillium Web', Arial, Helvetica, sans-serif;
+  line-height: 1.1em;
 }
 
 .flex-mid {
@@ -40,11 +42,12 @@ header {
 header h2 {
   font-size: 1.8rem;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 header h4 {
   color: var(--bgray);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 header a {
@@ -77,18 +80,16 @@ header a:hover:after {
   text-align: center;
   background-color: var(--gray);
   height: 1px;
-  margin-bottom: 30px;
 }
 
-input {
+input, textarea {
   border: 1.3px solid var(--orange);
   padding: 5px 10px;
   border-radius: 15px;
 }
 
-header input {
+input.left {
   border-radius: 15px 0 0 15px;
-  border-radius: 15px;
 }
 
 button {
@@ -100,7 +101,7 @@ button {
   border-radius: 15px;
 }
 
-header button {
+button.right {
   border-left: none;
   border-radius: 0 15px 15px 0;
 }
@@ -110,6 +111,10 @@ button:hover {
   background-color: transparent;
   color: var(--orange);
   cursor: pointer;
+}
+
+form.post {
+  margin-top: 15px;
 }
 
 form.post label {
@@ -122,8 +127,9 @@ form.post input {
   margin-bottom: 10px;
 }
 
-form.post input:last-of-type {
+form.post textarea {
   margin-bottom: 15px;
+  max-width: 80vw;
 }
 
 @media (max-width: 500px) {

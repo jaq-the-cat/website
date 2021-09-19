@@ -18,6 +18,7 @@
     {% else %}
       {{ w.pass('password', lf) }}
     {% endif %}
+    {% block header %}{% endblock header %}
   </header>
   <div class="line"></div>
   {% block body %}{% endblock body %}

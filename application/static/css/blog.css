@@ -1,9 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  row-gap: 15px;
+}
+
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 450px;
-  border: 1px solid var(--bgray);
+  /*border: 1px solid var(--bgray);*/
   border-radius: 15px;
   padding:  0 0 12px 0;
 }
@@ -13,9 +20,8 @@ article h3 {
   color: var(--bgray);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  padding-top: 25px;
-  row-gap: 15px;
+article small {
+  font-size: 0.8rem;
+  color: var(--kbgray);
+  margin-bottom: 6px;
 }
