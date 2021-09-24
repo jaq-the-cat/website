@@ -14,12 +14,12 @@ def signin():
         pw = login_form.password.data;
         if pw == Jaqi.pw:
             login_user(Jaqi, True)
-            return redirect(url_for('index.index'))
-    return redirect(url_for('index.index'))
+            return redirect(url_for('index.blog'))
+    return redirect(url_for('index.blog'))
 
 @bp.get('/signout')
 def signout():
     logout_user()
-    return redirect(url_for('index.index'))
+    return redirect(url_for('index.blog'))
 
 app.register_blueprint(bp)

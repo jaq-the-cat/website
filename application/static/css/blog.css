@@ -31,3 +31,7 @@ article p {
   overflow-wrap: anywhere;
   text-align: justify;
 }
+
+.selected {
+  border-bottom: 1px solid var(--orange);
+}

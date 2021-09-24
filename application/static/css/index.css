@@ -20,6 +20,7 @@
   color: var(--white);
   background-color: var(--black);
   text-decoration: none;
+  list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,33 +46,48 @@ header h2 {
   margin-bottom: 8px;
 }
 
-header h4 {
-  color: var(--bgray);
-  margin-bottom: 16px;
+header ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin: 5px 0 20px;
 }
 
-header a {
+header ul li {
+  transition: 150ms;
+  padding: 0 10px 6px;
+}
+
+.selected {
+  border-bottom: 1px solid var(--orange);
+}
+
+header ul li:hover {
+  transform: scale(120%);
+}
+
+header .signout {
   padding: 5px 10px;
   background-color: var(--orange);
-  border: 1.3px solid var(--orange);
+  border: 2px solid var(--orange);
   color: var(--black);
   border-radius: 15px;
   font-size: 0.75rem;
   transition: 150ms;
 }
 
-header a:after {
+header .signout:after {
   content: 'Signed in';
   transition: 150ms;
 }
 
-header a:hover {
+header .signout:hover {
   background-color: transparent;
   color: var(--orange);
   cursor: pointer;
 }
 
-header a:hover:after {
+header .signout:after {
   content: 'Sign out';
 }
 
@@ -83,7 +99,7 @@ header a:hover:after {
 }
 
 input, textarea {
-  border: 1.3px solid var(--orange);
+  border: 2px solid var(--orange);
   padding: 5px 10px;
   border-radius: 15px;
 }
@@ -95,7 +111,7 @@ input.left {
 button {
   padding: 5px 10px;
   background-color: var(--orange);
-  border: 1.3px solid var(--orange);
+  border: 2px solid var(--orange);
   color: var(--black);
   transition: 150ms;
   border-radius: 15px;
