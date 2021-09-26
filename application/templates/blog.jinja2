@@ -6,6 +6,7 @@
 
 {% block header %}
   {% if current_user.is_authenticated %}
+    <a class="signout" href="{{ url_for('auth.signout') }}"></a>
     <form class="post flex-mid" action="{{ url_for('index.post') }}" method="post">
       {{ pf.csrf_token }}
       <small>{{ pf.title.label }}</small>
@@ -13,6 +14,11 @@
       <small>{{ pf.body.label }}</small>
       {{ pf.body }}<br>
       <button type="submit">Create Post</button>
+    </form>
+  {% else %}
+    <form class="password" method="post" action="{{ url_for('auth.signin') }}">
+      {{ lf.csrf_token }}
+      {{ lf.password(class="left") }}<button class="right" type="submit">Sign in</button>
     </form>
   {% endif %}
 {% endblock header %}
